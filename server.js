@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 const keys = {
-  "ABC123": true,
+  "Hai123": true,
   "VIP999": true
 };
 
