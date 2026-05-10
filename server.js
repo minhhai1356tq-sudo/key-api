@@ -2,22 +2,21 @@ const express = require("express");
 const app = express();
 
 const keys = {
-  "Hai123": true,
-  "VIP999": true
+  "Hai2000": true
 };
 
 app.get("/check", (req, res) => {
   const key = req.query.key;
 
-  if (keys[key]) {
-    res.json({ success: true });
-  } else {
-    res.json({ success: false });
+  if (!keys[key]) {
+    return res.json({ success: false });
   }
+
+  return res.json({
+    success: true,
+    script: "https://pastefy.app/p3QVnLHs/raw"
+  });
 });
 
 const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log("API running on port " + PORT);
-});
+app.listen(PORT, () => console.log("running"));
