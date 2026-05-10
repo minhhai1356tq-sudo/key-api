@@ -3,7 +3,7 @@ const app = express();
 
 const keys = {
   "FF123": "https://orrxl4-protector.com/api/raw?id=rs1olsb3",
-  "VIP999": "https://pastefy.app/abcd1234/raw"
+  "VIP999": "https://pastefy.app/m9oX9wUs/raw"
 };
 
 app.get("/check", (req, res) => {
