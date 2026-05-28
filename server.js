@@ -6,6 +6,13 @@ const keys = {
   "VIP999": "https://pastefy.app/TMlop60f/raw"
 };
 
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "API is running"
+  });
+});
+
 app.get("/check", (req, res) => {
   const key = req.query.key;
 
@@ -22,6 +29,7 @@ app.get("/check", (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
   console.log("API running on port " + PORT);
 });
