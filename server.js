@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 const keys = {
-  "hai2000": "https://pastefy.app/YwHV4roh/raw",
+  "hai2000": "https://pastefy.app/hEWdVArS/raw",
   "VIP999": "https://pastefy.app/TMlop60f/raw"
 };
 
